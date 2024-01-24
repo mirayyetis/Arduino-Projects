@@ -34,7 +34,7 @@ void loop()
   
   digitalWrite(trigpin, LOW);
   
-  // pulseIn methodu bir dijial pinin HIGH iken LOW yapılması arasındaki süreyi vayahut LOW iken HIGH yapılması arasında geçen süreyi hesaplamak için kullanılır.
+  // pulseIn methodu bir dijial pinin HIGH iken LOW yapılması arasındaki süreyi veya LOW iken HIGH yapılması arasında geçen süreyi hesaplamak için kullanılır.
   
   sure=pulseIn(echopin,HIGH); // Normalde echo pini LOW fakat trig pininden çıkan ışın bir cisme çarpıp tekrar mesafe sensörünün echo pinine ulaştığında HIGH olmuş oldu.
   uzaklik=(sure/2)/29.154; // uzaklik=(sure/2)*0.0343;
